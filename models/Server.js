@@ -18,6 +18,8 @@ import rutaPost from '../routes/vistaPost.routes.js'
 import rutaGet from '../routes/vistaGetUsuarios.routes.js';
 import rutaDelete from '../routes/vistaDeleteUsuario.routes.js';
 import rutaPut from '../routes/vistaPutUsuario.routes.js';
+import rutaPostTransferencia from '../routes/vistaPostTransferencia.routes.js';
+import rutaGetTransferencias from '../routes/vistaGetTransferencias.routes.js';
 // import rutaGet from '../routes/vistaGet.routes.js'
 
  
@@ -41,6 +43,8 @@ class Server {
             rootGet:'/usuarios',
             rootDelete:'/usuario',
             rootPut:'/usuario',
+            rootPostTransferencia:'/transferencia',
+            rootGetTransferencias:'/transferencias'
             
         }
 
@@ -64,6 +68,8 @@ class Server {
         this.app.use( this.Paths.rootGet, rutaGet );
         this.app.use(this.Paths.rootDelete, rutaDelete);
         this.app.use(this.Paths.rootPut, rutaPut);
+        this.app.use(this.Paths.rootPostTransferencia, rutaPostTransferencia);
+        this.app.use(this.Paths.rootGetTransferencias, rutaGetTransferencias);
                   
     }
 
