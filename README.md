@@ -30,14 +30,14 @@ Siguiendo esta gráfica:
 
 Las rutas a disponibilizar son las siguientes:
 
-● / GET: Devuelve la aplicación cliente disponible en el apoyo de la prueba.
-● /usuario POST: Recibe los datos de un nuevo usuario y los almacena en PostgreSQL.
-● /usuarios GET: Devuelve todos los usuarios registrados con sus balances.
-● /usuario PUT: Recibe los datos modificados de un usuario registrado y los actualiza.
-● /usuario DELETE: Recibe el id de un usuario registrado y lo elimina .
-● /transferencia POST: Recibe los datos para realizar una nueva transferencia. Se debe
+- / GET: Devuelve la aplicación cliente disponible en el apoyo de la prueba.
+- /usuario POST: Recibe los datos de un nuevo usuario y los almacena en PostgreSQL.
+- /usuarios GET: Devuelve todos los usuarios registrados con sus balances.
+- /usuario PUT: Recibe los datos modificados de un usuario registrado y los actualiza.
+- /usuario DELETE: Recibe el id de un usuario registrado y lo elimina .
+- /transferencia POST: Recibe los datos para realizar una nueva transferencia. Se debe
 ocupar una transacción SQL en la consulta a la base de datos.
-● /transferencias GET: Devuelve todas las transferencias almacenadas en la base de
+- /transferencias GET: Devuelve todas las transferencias almacenadas en la base de
 datos en formato de arreglo.
 
 
@@ -46,7 +46,8 @@ datos en formato de arreglo.
 
 El proyecto está estructurado de la siguiente manera:
 
- ![image](https://github.com/CamiSerantoni/Mi_repertorio/assets/152921799/76ae5821-849e-46b5-9232-22bfa0ecee6a)
+![image](https://github.com/CamiSerantoni/Banco_Solar/assets/152921799/0745fb8a-0104-4afa-8104-d2937fce1787)
+
 
 En busca de seguir los lineamientoes de la arquitectura MVC
 
