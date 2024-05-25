@@ -37,7 +37,7 @@ export const putUsuario = async (req, res) => {
    
   try {
      // console.log("Salid req", req)
-  const {id}  = req.params;
+  const {id}  = req.query;
   
   const { nombre, balance } = req.body;
 

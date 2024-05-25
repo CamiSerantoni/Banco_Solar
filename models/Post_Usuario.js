@@ -10,7 +10,7 @@ const Post_Usuario = async (usuario) => {
     try {
         client = await pool.connect();
         const result = await client.query(consulta);
-        console.log(result)
+   
         return result;
     } catch (error) {
         return console.error('Error al insertar usuario', error.code, error.stack, error.message);

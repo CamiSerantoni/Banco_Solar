@@ -3,6 +3,6 @@ import { putUsuario } from '../controllers/usuariosHandler.js';
 
 const router = express.Router();
 
-router.put('/:id', putUsuario )
+router.put('/', putUsuario )
 
 export default router;
