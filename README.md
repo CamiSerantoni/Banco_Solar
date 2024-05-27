@@ -71,4 +71,25 @@ Para ejecutar el proyecto localmente, asegúrate de tener instalado Node.js y np
 4. Inicia el servidor local: `npm run dev`
 5. Abre tu navegador web y accede a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
+### SQL requerido para probar el ejercicio 
+
+```sql
+
+CREATE DATABASE bancosolar;
+
+CREATE TABLE usuarios (
+id SERIAL PRIMARY KEY,
+nombre VARCHAR(50),
+balance FLOAT CHECK (balance >= 0)
+);
+
+CREATE TABLE transferencias (
+id SERIAL PRIMARY KEY,
+emisor INT,
+receptor INT,
+monto FLOAT,
+fecha TIMESTAMP,
+FOREIGN KEY (emisor) REFERENCES usuarios(id) ON DELETE CASCADE,
+FOREIGN KEY (receptor) REFERENCES usuarios(id) ON DELETE CASCADE
+);
 
